@@ -101,7 +101,7 @@ master:
   # If you disable the non-Jenkins identity store and instead use the Jenkins internal one,
   # you should revert master.adminUser to your preferred admin user:
   adminUser: "admin"
-  # adminPassword: <defaults to random>
+  adminPassword: "docker@123"
   admin:
     existingSecret: ""
     userKey: jenkins-admin-user
@@ -231,6 +231,7 @@ master:
     - credentials-binding:1.23
     - git:4.2.2
     - configuration-as-code:1.43
+    - blueocean:1.24.0
 
   # List of plugins to install in addition to those listed in master.installPlugins
   additionalPlugins: []
